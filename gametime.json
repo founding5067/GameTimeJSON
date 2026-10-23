@@ -105,6 +105,30 @@
     "World of Tanks",
     "World of Warcraft"
   ],
+  "tags": [
+    "ranked",
+    "casual",
+    "competitive",
+    "chill",
+    "micRequired",
+    "noMic",
+    "anyoneWelcome",
+    "newPlayersWelcome",
+    "experiencedOnly",
+    "learning",
+    "grinding",
+    "questing",
+    "tournament",
+    "customGames",
+    "coop",
+    "pvp",
+    "speedrun",
+    "lateNight",
+    "shortSession",
+    "fullSession",
+    "streaming",
+    "justForFun"
+  ],
   "username": {
     "prefixes": [
       "Brave",
