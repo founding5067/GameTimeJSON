@@ -1,0 +1,36 @@
+name: Add a tag
+description: Suggest a tag for categorizing game sessions
+title: "[Tag]: "
+labels: ["tag"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tags are used to categorize game sessions. Each one has an `id` and a display `name`.
+  - type: input
+    id: name
+    attributes:
+      label: Display name
+      description: What users will see, e.g. `Late night`.
+    validations:
+      required: true
+  - type: input
+    id: tag-id
+    attributes:
+      label: Suggested id
+      description: camelCase, e.g. `lateNight` (optional).
+  - type: textarea
+    id: meaning
+    attributes:
+      label: What it means and when to use it
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: This isn't a duplicate of an existing tag in `tags`.
+          required: true
+        - label: The tag is family-friendly.
+          required: true

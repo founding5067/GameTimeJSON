@@ -1,0 +1,37 @@
+name: Add a game
+description: Suggest a game for the GameTime game list
+title: "[Game]: "
+labels: ["game"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The `games` list is what people pick from when creating a session and when adding to My Games.
+  - type: input
+    id: title
+    attributes:
+      label: Game title
+      description: "The exact official name, e.g. `Hunt: Showdown 1896`."
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Store page or official site (optional).
+  - type: textarea
+    id: why
+    attributes:
+      label: Why add it?
+      description: Anything that helps, such as how popular it is for playing with friends (optional).
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched the existing `games` list and this game isn't there.
+          required: true
+        - label: The title is spelled as officially published.
+          required: true
+        - label: The title is family-friendly.
+          required: true
