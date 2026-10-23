@@ -150,6 +150,14 @@
       "Tiger",
       "Wizard"
     ],
+    "blockedNumbers": [
+      "69",
+      "88",
+      "420",
+      "666",
+      "14",
+      "187"
+    ],
     "suffixEmoji": {
       "Badger": "🦡",
       "Comet": "☄️",
