@@ -12,14 +12,43 @@ A static JSON data file for GameTime. There is no code in this repo, only data t
   "games": ["Apex Legends", "Fortnite", "Minecraft"],
   "username": {
     "prefixes": ["Brave", "Cosmic"],
-    "suffixes": ["Panda", "Wizard"]
+    "suffixes": ["Fox", "Wizard"],
+    "blockedNumbers": ["69", "88", "420", "666", "14", "187"],
+    "suffixEmoji": { "Fox": "🦊" }
+  },
+  "avatar": {
+    "emoji": ["🦊", "🐼", "🧙"]
   }
 }
 ```
 
+### Fields
+
 - `version`: bumped whenever the data changes.
-- `games`: popular multiplayer game titles, sorted alphabetically (case-insensitive), no duplicates.
-- `username.prefixes` and `username.suffixes`: safe, friendly words (20 each, sorted) that users can combine into a username, such as `Brave` + `Panda` = `BravePanda`.
+
+**`games`**
+- The list people pick from when creating a session and when adding to My Games. The search box filters it as they type.
+- Names are cleaned, deduplicated and sorted alphabetically, so the order you write them in doesn't matter.
+
+**`username.prefixes`**
+- The first word of a display name, such as `Brave`.
+- Each must be letters only (no spaces, digits or symbols) and at most 13 characters. Entries that fail are dropped silently.
+
+**`username.suffixes`**
+- The second word, such as `Fox`. Same rules as prefixes.
+- A name is prefix + suffix + an optional number of up to 3 digits, like `BraveFox42`.
+
+**`username.blockedNumbers`**
+- Digit strings that can't appear in a name's number. It blocks any number that contains one, so `69` also blocks 169 and 690.
+- If your hosted file leaves this key out, the app uses its built-in list (69, 88, 420, 666, 14, 187). If you include it, your list replaces the built-in one entirely, so include every number you want blocked.
+
+**`username.suffixEmoji`**
+- Maps a suffix to a picture for the Shuffle button, e.g. `"Fox": "🦊"`.
+- An entry only counts if that emoji is also in `avatar.emoji`. A suffix with no entry, or with an emoji the picker doesn't offer, gets a random emoji from the list.
+
+**`avatar.emoji`**
+- The profile picture options. The order in the file is the order in the grid, so it isn't sorted.
+- Each entry must be exactly one emoji. Letters, digits and two emoji in one entry are dropped.
 
 ## Usage
 
