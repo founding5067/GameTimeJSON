@@ -106,28 +106,25 @@
     "World of Warcraft"
   ],
   "tags": [
-    "ranked",
-    "casual",
-    "competitive",
-    "chill",
-    "micRequired",
-    "noMic",
-    "anyoneWelcome",
-    "newPlayersWelcome",
-    "experiencedOnly",
-    "learning",
-    "grinding",
-    "questing",
-    "tournament",
-    "customGames",
-    "coop",
-    "pvp",
-    "speedrun",
-    "lateNight",
-    "shortSession",
-    "fullSession",
-    "streaming",
-    "justForFun"
+    { "id": "ranked", "name": "Ranked" },
+    { "id": "casual", "name": "Casual" },
+    { "id": "competitive", "name": "Competitive" },
+    { "id": "chill", "name": "Chill" },
+    { "id": "micRequired", "name": "Mic required" },
+    { "id": "noMic", "name": "No mic needed" },
+    { "id": "newPlayersWelcome", "name": "New players welcome" },
+    { "id": "experiencedOnly", "name": "Experienced only" },
+    { "id": "grinding", "name": "Grinding" },
+    { "id": "coop", "name": "Co-op" },
+    { "id": "pvp", "name": "PvP" },
+    { "id": "lateNight", "name": "Late night" }
+  ],
+  "platforms": [
+    { "id": "pc", "name": "PC", "symbol": "desktopcomputer" },
+    { "id": "playstation", "name": "PlayStation", "symbol": "gamecontroller.fill" },
+    { "id": "xbox", "name": "Xbox", "symbol": "gamecontroller.fill" },
+    { "id": "switch", "name": "Switch", "symbol": "gamecontroller.fill" },
+    { "id": "mobile", "name": "Mobile", "symbol": "iphone" }
   ],
   "username": {
     "prefixes": [
