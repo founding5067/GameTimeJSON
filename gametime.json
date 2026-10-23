@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "games": [
     "7 Days to Die",
     "Among Us",
@@ -136,9 +136,11 @@
       "Fox",
       "Gamer",
       "Hero",
+      "Jellyfish",
       "Knight",
       "Koala",
       "Llama",
+      "Mushroom",
       "Ninja",
       "Otter",
       "Panda",
@@ -167,9 +169,11 @@
       "Fox": "🦊",
       "Gamer": "🎮",
       "Hero": "🦸",
+      "Jellyfish": "🪼",
       "Knight": "🛡️",
       "Koala": "🐨",
       "Llama": "🦙",
+      "Mushroom": "🍄",
       "Ninja": "🥷",
       "Otter": "🦦",
       "Panda": "🐼",
@@ -254,7 +258,8 @@
       "🦸",
       "🏹",
       "✈️",
-      "☄️"
+      "☄️",
+      "🪼"
     ]
   }
 }
